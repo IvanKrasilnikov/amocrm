@@ -1,0 +1,51 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.third-view#third-view
+  .wrapper
+    +e.H2.title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa temporibus aspernatur, dolorum a sequi architecto
+    +e.UL.list
+      +e.item
+        +e.H4.item-title
+          +e.SPAN.item-title-number 1.
+          | Lorem ipsum dolor sit amet
+        +e.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia amet veniam minima, ut velit temporibus, maxime aliquid molestiae eveniet nulla.
+      +e.item
+        +e.H4.item-title
+          +e.SPAN.item-title-number 2.
+          | Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, iure quia voluptatum odio soluta delectus fugit, sed incidunt sint at doloremque libero sunt saepe sapiente aliquam amet ab animi. Odit.
+        +e.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, alias!
+      +e.item
+        +e.H4.item-title
+          +e.SPAN.item-title-number 3.
+          | Lorem ipsum dolor sit amet, consectetur
+        +e.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consectetur odio expedita vero totam facere dignissimos repudiandae iure, mollitia maxime. At molestiae ratione quibusdam corrupti consequatur, veritatis ad illum cumque enim, itaque, ipsum sint dignissimos minus hic dolore repellat quod quis debitis velit optio! Labore expedita recusandae itaque tempora sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum minus aliquid nemo expedita, deleniti laudantium sequi provident, nisi fugiat suscipit sit repellendus unde ullam consequuntur magnam dicta blanditiis natus debitis inventore accusantium assumenda! Deserunt amet iure qui, facere, ullam fugit totam magnam explicabo placeat, recusandae omnis ab veniam aspernatur doloremque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ipsum?
+      +e.item
+        +e.H4.item-title
+          +e.SPAN.item-title-number 4.
+          | Lorem ipsum dolor sit amet, consectetur adipisicing.
+        +e.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nulla ab praesentium, possimus beatae mollitia.
+      +e.item
+        +e.H4.item-title
+          +e.SPAN.item-title-number 5.
+          | Lorem ipsum dolor.
+        +e.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, eveniet, molestiae. Saepe quo, numquam facere blanditiis sequi esse porro exercitationem.
+  +b.conversion: .wrapper
+    +e.H3.title
+      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, harum
+      +e.title-accent бесплатно
+    +e.form: form
+      +e.name.input-field
+        i.material-icons.prefix account_circle
+        input(type="text")#conversion-name
+        label(for="conversion-name") Ваше имя
+      +e.phone.input-field
+        i.material-icons.prefix phone_iphone
+        input(type="text")#conversion-phone
+        label(for="conversion-phone") Ваш телефон
+      +e.email.input-field
+        i.material-icons.prefix mail_outline
+        input(type="text")#conversion-email
+        label(for="conversion-email") Ваш email
+      +e.button-wrapper
+        button(type="submit").btn.waves-effect.waves-light
+          | Отправить заявку

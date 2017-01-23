@@ -1,0 +1,39 @@
+.modal {
+  @extend .z-depth-1;
+  @include padding(25px 30px 30px 30px);
+  background-color: $c-brand-3;
+  display: inline-block;
+  text-align: left;
+  width: 380px;
+
+  & .material-icons {
+    color: $c-brand-1;
+  }
+
+  // materialize firefox bug
+  [for^="modal-"] {
+    left: 0;
+  }
+  
+  &__title {
+    @include padding(null null 10px);
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__title-accent {
+    @extend .orange-text, .text-darken-4;
+    @include margin(null null null 5px);
+    font-weight: bold;
+  }
+
+  &__submit-wrapper {
+    @include margin(10px null null);
+    text-align: center;
+
+    > button {
+      @extend .orange, .darken-4;
+      width: 100%;
+    }
+  }
+}

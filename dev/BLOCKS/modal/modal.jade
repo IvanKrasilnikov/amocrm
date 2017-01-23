@@ -1,0 +1,21 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.modal#modal
+  +e.H5.title
+    | Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    +e.title-accent бесплатно
+  .input-field
+    i.material-icons.prefix account_circle
+    input(type="text")#modal-name
+    label(for="modal-name") Ваше имя
+  .input-field
+    i.material-icons.prefix phone_iphone
+    input(type="text")#modal-phone
+    label(for="modal-phone") Ваш телефон
+  .input-field
+    i.material-icons.prefix mail_outline
+    input(type="text")#modal-email
+    label(for="modal-email") Ваш email
+  +e.submit-wrapper
+    button(type="submit").btn.waves-effect.waves-light
+      | Отправить заявку

@@ -1,0 +1,86 @@
+.conversion {
+  @include padding(30px null);
+  background-color: rgba(black, 0.5);
+  
+  &_contacts {
+    $top: 710px;
+    
+    @include position(absolute, $top null null 0);
+    background-color: rgba(black, 0.7);
+    width: 100%;
+    z-index: 2;
+    @include breakpoint(0 $sm) {
+      top: $top - 200px;
+    }
+  }
+  
+  & .material-icons {
+    color: $c-brand-1;
+  }
+  
+  [id^="conversion-"] {
+    color: white;
+  }
+  
+  // materialize firefox bug
+  [for^="conversion-"] {
+    left: 0;
+  }
+  
+  &__title {
+    color: white;
+    font-weight: 300;
+    text-align: center;
+     
+    .conversion_contacts & {
+      @include text-overflow;
+      line-height: 36px;
+    }
+  }
+  
+  &__title-accent {
+    @extend .orange-text, .text-darken-4;
+    @include margin(null null null 10px);
+    font-weight: bold;
+  }
+  
+  &__form {
+    > form {
+      @include container();
+    }
+  }
+  
+  &__name {
+    @include span(3 of 12);
+    @include breakpoint(0 $sm) {
+      @include span(12 of 12);
+    }
+  }
+  
+  &__phone {
+    @include span(3 of 12);
+    @include breakpoint(0 $sm) {
+      @include span(12 of 12);
+    }
+  }
+  
+  &__email {
+    @include span(3 of 12);
+    @include breakpoint(0 $sm) {
+      @include span(12 of 12);
+    }
+  }
+  
+  &__button-wrapper {
+    @include span(3 of 12 last);
+    @include padding(15px null null);
+    text-align: center;
+    @include breakpoint(0 $sm) {
+      @include span(12 of 12);
+    }
+    
+    > button {
+      @extend .orange, .darken-4;
+    }
+  }
+}

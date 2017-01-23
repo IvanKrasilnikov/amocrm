@@ -1,0 +1,61 @@
+.contacts {
+  @include position(relative);
+  height: 900px;
+  
+  &__map-wrapper {
+    @include position(absolute, 0 null null 0);
+    height: 100%;
+    width: 100%;
+  }
+  
+  &__map {
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+  
+  &__map-overlay {
+    @include position(absolute, 0 null null 0);
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+  
+  &__info-wrapper {
+    @include padding(150px null null);
+  }
+  
+  &__info {
+    @extend .z-depth-1;
+    @include padding(20px 30px 30px);
+    background-color: white;
+    border-radius: 3px;
+    float: left;
+    width: 380px;
+  }
+  
+  &__info-title {
+    @include padding(null null 20px);
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__info-item {
+    @include position(relative);
+    @include padding(null null 10px);
+  }
+  
+  &__info-item-title {
+    @include position(absolute, 0 null null 0);
+  }
+  
+  &__info-item-content {
+    @include padding(null null null 100px);
+  }
+  
+  &__info-item-link {
+    color: $c-base-black;
+    display: block;
+  }
+}

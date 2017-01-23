@@ -1,0 +1,40 @@
+.third-view {
+  @include padding(50px null null);
+  background-image: url(../img/third-view-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  
+  &__title {
+    @include text-shadow;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__list {
+    @include padding(30px null 20px);
+  }
+  
+  &__item {
+    @include margin(null null 30px);
+  }
+  
+  &__item-title {
+    @include padding(null null 10px 40px);
+    @include position(relative);
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: 300;
+  }
+  
+  &__item-title-number {
+    @include position(absolute, 0 null null 0);
+    color: $c-brand-1;
+    font-weight: bold;
+  }
+  
+  &__item-text {
+    @include padding(null null null 60px);
+    color: white;
+  }
+}

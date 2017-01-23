@@ -1,0 +1,32 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.fifth-view#fifth-view: .wrapper
+  +e.H2.title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat illum molestias veritatis impedit laborum quos praesentium vel modi sit ducimus
+  +e.UL.list
+    +e.item
+      +e.item-icon: i.material-icons cached
+      +e.item-content
+        +e.item-question
+          +e.item-symbol: i.material-icons add
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsum doloribus saepe iste eveniet earum, ex minima placeat, atque eos!
+        +e.item-answer
+          +e.item-answer-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque architecto quam hic, deleniti repellat voluptatibus.
+    +e.item
+      +e.item-icon: i.material-icons event_seat
+      +e.item-content
+        +e.item-question
+          +e.item-symbol: i.material-icons add
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, repellendus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsum doloribus saepe iste eveniet earum, ex minima placeat, atque eos!
+        +e.item-answer
+          +e.item-answer-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque architecto quam hic, deleniti repellat voluptatibus.
+    +e.item
+      +e.item-icon: i.material-icons credit_card
+      +e.item-content
+        +e.item-question
+          +e.item-symbol: i.material-icons add
+          | Consectetur adipisicing elit. Numquam ipsum doloribus saepe iste eveniet earum, ex minima placeat, atque eos!
+        +e.item-answer
+          +e.item-answer-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, recusandae cum autem deleniti cumque, repudiandae unde. Totam ex vero sapiente consequuntur veniam, incidunt! Vitae quis at tenetur aut dolorum odit.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque architecto quam hic, deleniti repellat voluptatibus.
+  +e.to-modal
+    +e.H4.to-modal-title Готовы увеличить продажи?
+    +e(href="#modal").to-modal-button.btn.waves-effect.waves-light.modal-trigger Да, начнем!

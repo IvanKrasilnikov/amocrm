@@ -1,0 +1,31 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.footer
+  +e.up: .wrapper
+    +e.info-wrapper: +e.info
+      | &copy; 2016 "Lorem ipsum dolor sit amet"
+      br
+      | УНП 999999999
+    +e.emails-wrapper: +e.emails
+      i.material-icons mail_outline
+      +e(href="mailto:#").email
+        | mailmail@gmail.com
+    +e.phones-wrapper: +e.phones
+      i.material-icons phone_iphone
+      +e.phone-wrapper
+        +e(href="tel:#").phone
+          span +375 29
+          +e.phone-sup 999 99 99
+        +e(href="tel:#").phone
+          span +375 29
+          +e.phone-sup 999 99 99
+    +e.logo
+      +e(href="#"): img(src="img/logo.png" alt="logo")
+  +e.down: .wrapper
+    +e.down-text-left
+      | Мы являемся сертифицированным партнёром в Беларуси
+      +e(href="#").down-link: img(src="img/down-footer.png" alt="")
+    +e.down-text-right
+      | Сделано в
+      +e(href="http://lab42.pro").down-link Лаборатории 42
+      

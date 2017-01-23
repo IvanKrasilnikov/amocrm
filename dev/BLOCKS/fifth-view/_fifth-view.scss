@@ -1,0 +1,81 @@
+.fifth-view {
+  @include padding(50px null);
+  background-color: $c-brand-3;
+  
+  &__title {
+    color: $c-brand-1;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__list {
+    @include padding(20px null null);
+  }
+  
+  &__item {
+    @include position(relative);
+    @include padding(null null 15px null);
+  }
+  
+  &__item-icon {
+    @extend .z-depth-1;
+    @include position(absolute, 0 null null 0);
+    background-color: $c-brand-1;
+    border-radius: 50%;
+    height: 60px;
+    text-align: center;
+    width: 60px;
+    
+    > .material-icons {
+      color: white;
+      font-size: 32px;
+      line-height: 60px;
+    }
+  }
+  
+  &__item-content {
+    @include padding(8px null 8px 80px);
+  }
+  
+  &__item-question {
+    @extend .z-depth-1;
+    @include position(relative);
+    @include padding(10px 50px 10px 20px);
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  &__item-symbol {
+    @include position(absolute, 10px 10px null null);
+    color: gray;
+  }
+  
+  &__item-answer {
+    @include position(relative, -10px null null null);
+    @include padding(null 50px null 20px);
+    border-radius: 0 3px;
+    background-color: #fafafa;
+    display: none;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+  
+  &__item-answer-text {
+    @include padding(20px null 10px);
+  }
+  
+  &__to-modal {
+    text-align: center;
+  }
+  
+  &__to-modal-title {
+    @include margin(null null 30px null);
+    font-weight: 300;
+  }
+  
+  &__to-modal-button {
+    @extend .orange, .darken-4;
+  }
+}

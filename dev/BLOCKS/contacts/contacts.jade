@@ -1,0 +1,44 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.contacts#contacts
+  +e.map-wrapper
+    +e.IFRAME.map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.793054137822!2d27.547392015397207!3d53.917653239465665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf8fa41f00d5%3A0x8a127ac2808f5214!2z0L_RgNC-0YHQvy4g0JzQsNGI0LXRgNC-0LLQsCAzNSwg0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sru!4v1472134201352" allowfullscreen)
+    +e.map-overlay
+  +e.info-wrapper: .wrapper
+    +e.info
+      +e.H4.info-title Контакты и адрес офиса
+      +e.info-item
+        +e.info-item-title Адрес:
+        +e.info-item-content г.Минск, ул.Революционная 14, офис 5
+      +e.info-item
+        +e.info-item-title Телефон:
+        +e.info-item-content
+          +e(href="tel:#").info-item-link +375 29 999 99 99
+          +e(href="tel:#").info-item-link +375 29 999 99 99
+      +e.info-item
+        +e.info-item-title Email:
+        +e.info-item-content
+          +e(href="mailto:#").info-item-link mailmail@gmail.com
+      +e.info-item
+        +e.info-item-title Работаем:
+        +e.info-item-content Пн.-Пт. с 9:00 до 18:00
+  +b.conversion_contacts: .wrapper
+    +e.H3.title
+      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, harum
+      +e.title-accent бесплатно
+    +e.form: form
+      +e.name.input-field
+        i.material-icons.prefix account_circle
+        input(type="text")#conversion-second-name
+        label(for="conversion-second-name") Ваше имя
+      +e.phone.input-field
+        i.material-icons.prefix phone_iphone
+        input(type="text")#conversion-second-phone
+        label(for="conversion-second-phone") Ваш телефон
+      +e.email.input-field
+        i.material-icons.prefix mail_outline
+        input(type="text")#conversion-second-email
+        label(for="conversion-second-email") Ваш email
+      +e.button-wrapper
+        button(type="submit").btn.waves-effect.waves-light
+          | Отправить заявку

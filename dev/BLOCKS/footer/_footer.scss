@@ -1,0 +1,118 @@
+.footer {
+  @include position(relative);
+  z-index: 3;
+  
+  &__up {
+    @include padding(50px null);
+    background-color: $c-brand-2;
+    
+    > .wrapper {
+      @include container;
+    }
+  }
+  
+  &__info-wrapper {
+    @include span(3 of 12);
+    @include breakpoint(0 $md) {
+      @include span(12 of 12);
+      text-align: center;
+    }
+  }
+  
+  &__info {
+    @include margin(18px null null);
+    display: inline-block;
+    color: white;
+  }
+  
+  &__phones,
+  &__emails {
+    @include position(relative);
+    display: inline-block;
+    vertical-align: top;
+    
+    .material-icons {
+      @include position(absolute, 0 null null 0);
+      color: $c-brand-1;
+      line-height: 80px;
+    }
+  }
+  
+  &__phones {
+    @include padding(10px null null 30px);
+  }
+  
+  &__phones-wrapper,
+  &__emails-wrapper {
+    @include span(3 of 12);
+    text-align: center;
+    @include breakpoint(0 $md) {
+      @include span(12 of 12);
+    }
+  }
+  
+  &__emails {
+    @include text-overflow;
+    @include padding(null null null 30px);
+    color: white;
+    max-width: 300px;
+  }
+  
+  &__email,
+  &__phone {
+    color: white;
+  }
+  
+  &__email {
+    line-height: 80px;
+  }
+  
+  &__phone {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+  }
+  
+  &__phone-sup {
+    @include margin(null null null 5px);
+    font-size: $h4-fontsize;
+  }
+  
+  &__logo {
+    @include padding(22px null null);
+    text-align: center;
+    @include breakpoint($md) {
+      @include span(3 of 12 last);
+    }
+    @include breakpoint(0 $md) {
+      @include span(12 of 12);
+    }
+  }
+  
+  &__down {
+    background-color: darken($c-brand-2, 10%);
+    
+    > .wrapper {
+      @include clearfix;
+    }
+  }
+  
+  &__down-text-left {
+    @include padding(20px null);
+    color: $c-brand-1;
+    display: inline-block;
+    float: left;
+  }
+  
+  &__down-text-right {
+    @include padding(20px null);
+    color: $c-brand-1;
+    float: right;
+  }
+  
+  &__down-link {
+    @include margin(null null null 5px);
+    color: white;
+  }
+}

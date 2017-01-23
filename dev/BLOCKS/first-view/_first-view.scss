@@ -1,0 +1,204 @@
+.first-view {
+  background-position: center;
+  background-size: cover;
+  
+  &__header {
+    @include clearfix;
+    background-color: rgba(white, 0.9);
+    @include breakpoint(0 $sm) {
+      text-align: center;
+    }
+  }
+  
+  &__logo {
+    @include margin(22px null);
+    float: left;
+    @include breakpoint(0 $sm) {
+      display: inline-block;
+      float: none;
+    }
+  }
+  
+  &__contacts {
+    float: right;
+    @include breakpoint(0 $sm) {
+      float: none;
+    }
+  }
+  
+  &__phones,
+  &__emails {
+    @include position(relative);
+    display: inline-block;
+    vertical-align: top;
+    
+    .material-icons {
+      @include position(absolute, 0 null null 0);
+      color: $c-brand-1;
+      line-height: 80px;
+    }
+  }
+  
+  &__phones {
+    @include padding(10px null 10px 30px);
+    @include breakpoint(0 $sm) {
+      @include margin(null 10px);
+    }
+  }
+  
+  &__emails {
+    @include text-overflow;
+    @include padding(null null null 30px);
+    @include margin(null 20px null null);
+    max-width: 300px;
+    @include breakpoint(0 $sm) {
+      @include margin(null 10px);
+    }
+  }
+  
+  &__email,
+  &__phone {
+    color: $c-base-black;
+  }
+  
+  &__email {
+    line-height: 80px;
+  }
+  
+  &__phone-wrapper {
+    display: inline-block;
+  } 
+  
+  &__phone {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+  }
+  
+  &__phone-sup {
+    @include margin(null null null 5px);
+    font-size: $h4-fontsize;
+  }
+  
+  &__main {
+    @include padding(50px null);
+    
+    > .wrapper {
+      @include container();
+    }
+  }
+  
+  &__info {
+    @include span(6 of 12);
+    @include breakpoint(0 $sm) {
+      @include span(12 of 12);
+    }
+  }
+  
+  &__title {
+    @include text-shadow;
+    color: white;
+    font-size: $h2-fontsize;
+    font-weight: 300;
+    @include breakpoint(0 $sm) {
+      text-align: center;
+    }
+  }
+  
+  &__sub-title {
+    color: white;
+    font-size: $h4-fontsize;
+    font-weight: 300;
+    @include breakpoint(0 $sm) {
+      text-align: center;
+    }
+  }
+  
+  &__list {
+    @include margin(50px null null);
+  }
+  
+  &__list-item {
+    @include padding(null null 10px 30px);
+    @include position(relative);
+    color: white;
+    font-size: $h6-fontsize;
+    line-height: 24px;
+    
+    > .material-icons {
+      @include position(absolute, 0 null null 0);
+      color: $c-brand-1;
+    }
+  }
+  
+  &__call-wrapper {
+    @include span(6 of 12 last);
+    text-align: right;
+    @include breakpoint(0 $sm) {
+      @include margin(50px null null);
+      @include span(12 of 12);
+      text-align: center;
+    }
+  }
+  
+  &__call {
+    @extend .z-depth-1;
+    @include padding(25px 30px 30px 30px);
+    background-color: $c-brand-3;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+
+    & .material-icons {
+      color: $c-brand-1;
+    }
+
+    // materialize firefox bug
+    [for^="first-view-"] {
+      left: 0;
+    }
+  }
+  
+  &__call-title {
+    @include padding(null null 10px);
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__call-title-accent {
+    @extend .orange-text, .text-darken-4;
+    @include margin(null null null 5px);
+    font-weight: bold;
+  }
+
+  &__call-submit-wrapper {
+    @include margin(10px null null);
+    text-align: center;
+
+    > button {
+      @extend .orange, .darken-4;
+      width: 100%;
+    }
+  }
+  
+  &__partners {
+    background-color: rgba(black, 0.4);
+    height: 100px;
+    overflow: hidden;
+    
+    > .wrapper {
+      @include padding(20px null);
+    }
+  }
+  
+  &__partner {
+    text-align: center;
+    height: 60px;
+    
+    > img {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=480">
+  <title>amocrm-promo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=latin,cyrillic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/vendors/materialize/materialize.css">
+  <link rel="stylesheet" href="css/vendors/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/vendors/slick/slick.css">
+  <link rel="stylesheet" href="css/vendors/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="aside">
+    <div data-activates="slide-out" class="aside__menu btn-floating btn-large waves-effect waves-light"><i class="material-icons">storage</i>
+    </div>
+    <div id="toHome" class="aside__to-home btn-floating btn-large waves-effect waves-light"><i class="material-icons">vertical_align_top</i>
+    </div>
+  </div>
+  <div style="background-image: url(img/first-view-bg.jpg);" id="first-view" class="first-view">
+    <div class="first-view__header">
+      <div class="wrapper">
+        <a href="#" class="first-view__logo">
+          <img src="img/logo.png" alt="logo">
+        </a>
+        <div class="first-view__contacts">
+          <div class="first-view__emails"><i class="material-icons">mail_outline</i><a href="mailto:#" class="first-view__email">mailmail@gmail.com</a>
+          </div>
+          <div class="first-view__phones"><i class="material-icons">phone_iphone</i>
+            <div class="first-view__phone-wrapper"><a href="tel:#" class="first-view__phone"><span>+375 29</span><span class="first-view__phone-sup">999 99 99</span></a><a href="tel:#" class="first-view__phone"><span>+375 29</span><span class="first-view__phone-sup">999 99 99</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="first-view__main">
+      <div class="wrapper">
+        <div class="first-view__info">
+          <h1 class="first-view__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+          <h3 class="first-view__sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, reprehenderit id quod!</h3>
+          <ul class="first-view__list">
+            <li class="first-view__list-item"><i class="material-icons">check_circle</i>Dolor sit amet, consectetur</li>
+            <li class="first-view__list-item"><i class="material-icons">check_circle</i>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+            <li class="first-view__list-item"><i class="material-icons">check_circle</i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, laborum. Ipsum dolor sit amet, consectetur adipisicing elit</li>
+            <li class="first-view__list-item"><i class="material-icons">check_circle</i>Lorem ipsum dolor</li>
+          </ul>
+        </div>
+        <div class="first-view__call-wrapper">
+          <div class="first-view__call">
+            <h5 class="first-view__call-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit<span class="first-view__call-title-accent">бесплатно</span></h5>
+            <div class="input-field"><i class="material-icons prefix">account_circle</i>
+              <input type="text" id="first-view-name">
+              <label for="first-view-name">Ваше имя</label>
+            </div>
+            <div class="input-field"><i class="material-icons prefix">phone_iphone</i>
+              <input type="text" id="first-view-phone">
+              <label for="first-view-phone">Ваш телефон</label>
+            </div>
+            <div class="input-field"><i class="material-icons prefix">mail_outline</i>
+              <input type="text" id="first-view-email">
+              <label for="first-view-email">Ваш email</label>
+            </div>
+            <div class="first-view__call-submit-wrapper">
+              <button type="submit" class="btn waves-effect waves-light">Отправить заявку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="first-view__partners">
+      <div class="wrapper">
+        <div class="first-view__partner">
+          <img src="img/first-view-partners/partner-1.png" alt="">
+        </div>
+        <div class="first-view__partner">
+          <img src="img/first-view-partners/partner-2.png" alt="">
+        </div>
+        <div class="first-view__partner">
+          <img src="img/first-view-partners/partner-3.png" alt="">
+        </div>
+        <div class="first-view__partner">
+          <img src="img/first-view-partners/partner-4.png" alt="">
+        </div>
+        <div class="first-view__partner">
+          <img src="img/first-view-partners/partner-5.png" alt="">
+        </div>
+        <div class="first-view__partner">
+          <img src="img/first-view-partners/partner-6.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="second-view" class="second-view">
+    <div class="wrapper">
+      <h2 class="second-view__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa temporibus aspernatur, dolorum a sequi architecto</h2>
+      <div class="second-view__grid">
+        <div class="second-view__tile">
+          <div class="second-view__tile-icon-wrapper">
+            <div class="second-view__tile-icon"><i class="material-icons">youtube_searched_for</i>
+            </div>
+          </div>
+          <h4 class="second-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, consectetur.</h4>
+          <div class="second-view__tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat.</div>
+        </div>
+        <div class="second-view__tile">
+          <div class="second-view__tile-icon-wrapper">
+            <div class="second-view__tile-icon"><i class="material-icons">cached</i>
+            </div>
+          </div>
+          <h4 class="second-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+          <div class="second-view__tile-text">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="second-view__tile">
+          <div class="second-view__tile-icon-wrapper">
+            <div class="second-view__tile-icon"><i class="material-icons">event_seat</i>
+            </div>
+          </div>
+          <h4 class="second-view__tile-title">Lorem ipsum dolor sit amet, consectetur.</h4>
+          <div class="second-view__tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quia cupiditate repudiandae natus iusto nobis quae facilis ipsa beatae sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat eum cupiditate eligendi error
+            delectus aliquid numquam, nostrum. Quas, sunt?</div>
+        </div>
+        <div class="second-view__tile">
+          <div class="second-view__tile-icon-wrapper">
+            <div class="second-view__tile-icon"><i class="material-icons">credit_card</i>
+            </div>
+          </div>
+          <h4 class="second-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, consectetur. Lorem ipsum.</h4>
+          <div class="second-view__tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat eum cupiditate eligendi error delectus aliquid numquam, nostrum. Quas, sunt?</div>
+        </div>
+        <div class="second-view__tile">
+          <div class="second-view__tile-icon-wrapper">
+            <div class="second-view__tile-icon"><i class="material-icons">youtube_searched_for</i>
+            </div>
+          </div>
+          <h4 class="second-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, consectetur.</h4>
+          <div class="second-view__tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat.</div>
+        </div>
+        <div class="second-view__tile">
+          <div class="second-view__tile-icon-wrapper">
+            <div class="second-view__tile-icon"><i class="material-icons">cached</i>
+            </div>
+          </div>
+          <h4 class="second-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+          <div class="second-view__tile-text">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="second-view__tile">
+          <div class="second-view__tile-icon-wrapper">
+            <div class="second-view__tile-icon"><i class="material-icons">event_seat</i>
+            </div>
+          </div>
+          <h4 class="second-view__tile-title">Lorem ipsum dolor sit amet, consectetur.</h4>
+          <div class="second-view__tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quia cupiditate repudiandae natus iusto nobis quae facilis ipsa beatae sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat eum cupiditate eligendi error
+            delectus aliquid numquam, nostrum. Quas, sunt?</div>
+        </div>
+        <div class="second-view__tile">
+          <div class="second-view__tile-icon-wrapper">
+            <div class="second-view__tile-icon"><i class="material-icons">credit_card</i>
+            </div>
+          </div>
+          <h4 class="second-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, consectetur. Lorem ipsum.</h4>
+          <div class="second-view__tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat eum cupiditate eligendi error delectus aliquid numquam, nostrum. Quas, sunt?</div>
+        </div>
+      </div>
+      <div class="second-view__more-wrapper">
+        <div class="second-view__more-button btn waves-effect waves-light">Еще функции...</div>
+      </div>
+    </div>
+  </div>
+  <div id="third-view" class="third-view">
+    <div class="wrapper">
+      <h2 class="third-view__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa temporibus aspernatur, dolorum a sequi architecto</h2>
+      <ul class="third-view__list">
+        <li class="third-view__item">
+          <h4 class="third-view__item-title"><span class="third-view__item-title-number">1.</span>Lorem ipsum dolor sit amet</h4>
+          <div class="third-view__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia amet veniam minima, ut velit temporibus, maxime aliquid molestiae eveniet nulla.</div>
+        </li>
+        <li class="third-view__item">
+          <h4 class="third-view__item-title"><span class="third-view__item-title-number">2.</span>Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, iure quia voluptatum odio soluta delectus fugit, sed incidunt sint at doloremque libero sunt saepe sapiente aliquam amet ab animi. Odit.</h4>
+          <div class="third-view__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, alias!</div>
+        </li>
+        <li class="third-view__item">
+          <h4 class="third-view__item-title"><span class="third-view__item-title-number">3.</span>Lorem ipsum dolor sit amet, consectetur</h4>
+          <div class="third-view__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consectetur odio expedita vero totam facere dignissimos repudiandae iure, mollitia maxime. At molestiae ratione quibusdam corrupti consequatur, veritatis ad illum cumque enim,
+            itaque, ipsum sint dignissimos minus hic dolore repellat quod quis debitis velit optio! Labore expedita recusandae itaque tempora sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum minus aliquid nemo expedita, deleniti
+            laudantium sequi provident, nisi fugiat suscipit sit repellendus unde ullam consequuntur magnam dicta blanditiis natus debitis inventore accusantium assumenda! Deserunt amet iure qui, facere, ullam fugit totam magnam explicabo placeat, recusandae
+            omnis ab veniam aspernatur doloremque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ipsum?</div>
+        </li>
+        <li class="third-view__item">
+          <h4 class="third-view__item-title"><span class="third-view__item-title-number">4.</span>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+          <div class="third-view__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nulla ab praesentium, possimus beatae mollitia.</div>
+        </li>
+        <li class="third-view__item">
+          <h4 class="third-view__item-title"><span class="third-view__item-title-number">5.</span>Lorem ipsum dolor.</h4>
+          <div class="third-view__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, eveniet, molestiae. Saepe quo, numquam facere blanditiis sequi esse porro exercitationem.</div>
+        </li>
+      </ul>
+    </div>
+    <div class="conversion">
+      <div class="wrapper">
+        <h3 class="conversion__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, harum<span class="conversion__title-accent">бесплатно</span></h3>
+        <div class="conversion__form">
+          <form>
+            <div class="conversion__name input-field"><i class="material-icons prefix">account_circle</i>
+              <input type="text" id="conversion-name">
+              <label for="conversion-name">Ваше имя</label>
+            </div>
+            <div class="conversion__phone input-field"><i class="material-icons prefix">phone_iphone</i>
+              <input type="text" id="conversion-phone">
+              <label for="conversion-phone">Ваш телефон</label>
+            </div>
+            <div class="conversion__email input-field"><i class="material-icons prefix">mail_outline</i>
+              <input type="text" id="conversion-email">
+              <label for="conversion-email">Ваш email</label>
+            </div>
+            <div class="conversion__button-wrapper">
+              <button type="submit" class="btn waves-effect waves-light">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fourth-view" class="fourth-view">
+    <div class="wrapper">
+      <h2 class="fourth-view__title"> 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="fourth-view__title-accent">Ipsa temporibus aspernatur</span>,dolorum a sequi architecto</h2>
+      <div class="fourth-view__grid">
+        <div class="fourth-view__tile">
+          <div class="fourth-view__tile-icon-wrapper"><i class="material-icons">youtube_searched_for</i>
+          </div>
+          <h4 class="fourth-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, consectetur.</h4>
+          <div class="fourth-view__tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat.</div>
+        </div>
+        <div class="fourth-view__tile">
+          <div class="fourth-view__tile-icon-wrapper"><i class="material-icons">cached</i>
+          </div>
+          <h4 class="fourth-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+          <div class="fourth-view__tile-text">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="fourth-view__tile">
+          <div class="fourth-view__tile-icon-wrapper"><i class="material-icons">event_seat</i>
+          </div>
+          <h4 class="fourth-view__tile-title">Lorem ipsum dolor sit amet, consectetur.</h4>
+          <div class="fourth-view__tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quia cupiditate repudiandae natus iusto nobis quae facilis ipsa beatae sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat eum cupiditate eligendi error
+            delectus aliquid numquam, nostrum. Quas, sunt?</div>
+        </div>
+        <div class="fourth-view__tile">
+          <div class="fourth-view__tile-icon-wrapper"><i class="material-icons">credit_card</i>
+          </div>
+          <h4 class="fourth-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, consectetur. Lorem ipsum.</h4>
+          <div class="fourth-view__tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat eum cupiditate eligendi error delectus aliquid numquam, nostrum. Quas, sunt?</div>
+        </div>
+        <div class="fourth-view__tile">
+          <div class="fourth-view__tile-icon-wrapper"><i class="material-icons">youtube_searched_for</i>
+          </div>
+          <h4 class="fourth-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, consectetur.</h4>
+          <div class="fourth-view__tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat.</div>
+        </div>
+        <div class="fourth-view__tile">
+          <div class="fourth-view__tile-icon-wrapper"><i class="material-icons">cached</i>
+          </div>
+          <h4 class="fourth-view__tile-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+          <div class="fourth-view__tile-text">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fifth-view" class="fifth-view">
+    <div class="wrapper">
+      <h2 class="fifth-view__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat illum molestias veritatis impedit laborum quos praesentium vel modi sit ducimus</h2>
+      <ul class="fifth-view__list">
+        <li class="fifth-view__item">
+          <div class="fifth-view__item-icon"><i class="material-icons">cached</i>
+          </div>
+          <div class="fifth-view__item-content">
+            <div class="fifth-view__item-question">
+              <div class="fifth-view__item-symbol"><i class="material-icons">add</i>
+              </div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsum doloribus saepe iste eveniet earum, ex minima placeat, atque eos!</div>
+            <div class="fifth-view__item-answer">
+              <div class="fifth-view__item-answer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque architecto quam hic, deleniti repellat voluptatibus.</div>
+            </div>
+          </div>
+        </li>
+        <li class="fifth-view__item">
+          <div class="fifth-view__item-icon"><i class="material-icons">event_seat</i>
+          </div>
+          <div class="fifth-view__item-content">
+            <div class="fifth-view__item-question">
+              <div class="fifth-view__item-symbol"><i class="material-icons">add</i>
+              </div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, repellendus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsum doloribus saepe iste eveniet earum, ex minima placeat, atque eos!</div>
+            <div class="fifth-view__item-answer">
+              <div class="fifth-view__item-answer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque architecto quam hic, deleniti repellat voluptatibus.</div>
+            </div>
+          </div>
+        </li>
+        <li class="fifth-view__item">
+          <div class="fifth-view__item-icon"><i class="material-icons">credit_card</i>
+          </div>
+          <div class="fifth-view__item-content">
+            <div class="fifth-view__item-question">
+              <div class="fifth-view__item-symbol"><i class="material-icons">add</i>
+              </div>Consectetur adipisicing elit. Numquam ipsum doloribus saepe iste eveniet earum, ex minima placeat, atque eos!</div>
+            <div class="fifth-view__item-answer">
+              <div class="fifth-view__item-answer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, recusandae cum autem deleniti cumque, repudiandae unde. Totam ex vero sapiente consequuntur veniam, incidunt! Vitae quis at tenetur aut dolorum odit.Lorem ipsum dolor
+                sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque architecto quam hic, deleniti repellat voluptatibus.</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="fifth-view__to-modal">
+        <h4 class="fifth-view__to-modal-title">Готовы увеличить продажи?</h4><a href="#modal" class="fifth-view__to-modal-button btn waves-effect waves-light modal-trigger">Да, начнем!</a>
+      </div>
+    </div>
+  </div>
+  <div id="certifications" class="certifications">
+    <div class="wrapper">
+      <h2 class="certifications__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa temporibus aspernatur, dolorum a sequi architecto</h2>
+      <div class="certifications__grid">
+        <div class="certifications__text-wrapper valign-wrapper">
+          <div class="certifications__valign">
+            <h3 class="certifications__text-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, omnis.</h3>
+            <div class="certifications__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, ducimus. Eligendi veritatis in, adipisci, debitis accusamus minus perferendis consectetur?</div>
+          </div>
+        </div>
+        <div class="certifications__pictures">
+          <div class="certifications__picture">
+            <img src="img/certificates/certificate-1.jpg" alt="">
+          </div>
+          <div class="certifications__picture">
+            <img src="img/certificates/certificate-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contacts" class="contacts">
+    <div class="contacts__map-wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.793054137822!2d27.547392015397207!3d53.917653239465665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf8fa41f00d5%3A0x8a127ac2808f5214!2z0L_RgNC-0YHQvy4g0JzQsNGI0LXRgNC-0LLQsCAzNSwg0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sru!4v1472134201352"
+      allowfullscreen class="contacts__map"></iframe>
+      <div class="contacts__map-overlay"></div>
+    </div>
+    <div class="contacts__info-wrapper">
+      <div class="wrapper">
+        <div class="contacts__info">
+          <h4 class="contacts__info-title">Контакты и адрес офиса</h4>
+          <div class="contacts__info-item">
+            <div class="contacts__info-item-title">Адрес:</div>
+            <div class="contacts__info-item-content">г.Минск, ул.Революционная 14, офис 5</div>
+          </div>
+          <div class="contacts__info-item">
+            <div class="contacts__info-item-title">Телефон:</div>
+            <div class="contacts__info-item-content"><a href="tel:#" class="contacts__info-item-link">+375 29 999 99 99</a><a href="tel:#" class="contacts__info-item-link">+375 29 999 99 99</a>
+            </div>
+          </div>
+          <div class="contacts__info-item">
+            <div class="contacts__info-item-title">Email:</div>
+            <div class="contacts__info-item-content"><a href="mailto:#" class="contacts__info-item-link">mailmail@gmail.com</a>
+            </div>
+          </div>
+          <div class="contacts__info-item">
+            <div class="contacts__info-item-title">Работаем:</div>
+            <div class="contacts__info-item-content">Пн.-Пт. с 9:00 до 18:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="conversion conversion_contacts">
+      <div class="wrapper">
+        <h3 class="conversion__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, harum<span class="conversion__title-accent">бесплатно</span></h3>
+        <div class="conversion__form">
+          <form>
+            <div class="conversion__name input-field"><i class="material-icons prefix">account_circle</i>
+              <input type="text" id="conversion-second-name">
+              <label for="conversion-second-name">Ваше имя</label>
+            </div>
+            <div class="conversion__phone input-field"><i class="material-icons prefix">phone_iphone</i>
+              <input type="text" id="conversion-second-phone">
+              <label for="conversion-second-phone">Ваш телефон</label>
+            </div>
+            <div class="conversion__email input-field"><i class="material-icons prefix">mail_outline</i>
+              <input type="text" id="conversion-second-email">
+              <label for="conversion-second-email">Ваш email</label>
+            </div>
+            <div class="conversion__button-wrapper">
+              <button type="submit" class="btn waves-effect waves-light">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__up">
+      <div class="wrapper">
+        <div class="footer__info-wrapper">
+          <div class="footer__info">&copy; 2016 "Lorem ipsum dolor sit amet"
+            <br>УНП 999999999</div>
+        </div>
+        <div class="footer__emails-wrapper">
+          <div class="footer__emails"><i class="material-icons">mail_outline</i><a href="mailto:#" class="footer__email">mailmail@gmail.com</a>
+          </div>
+        </div>
+        <div class="footer__phones-wrapper">
+          <div class="footer__phones"><i class="material-icons">phone_iphone</i>
+            <div class="footer__phone-wrapper"><a href="tel:#" class="footer__phone"><span>+375 29</span><span class="footer__phone-sup">999 99 99</span></a><a href="tel:#" class="footer__phone"><span>+375 29</span><span class="footer__phone-sup">999 99 99</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__logo">
+          <a href="#">
+            <img src="img/logo.png" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__down">
+      <div class="wrapper">
+        <div class="footer__down-text-left">Мы являемся сертифицированным партнёром в Беларуси
+          <a href="#" class="footer__down-link">
+            <img src="img/down-footer.png" alt="">
+          </a>
+        </div>
+        <div class="footer__down-text-right">Сделано в<a href="http://lab42.pro" class="footer__down-link">Лаборатории 42</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal" class="modal">
+    <h5 class="modal__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit<span class="modal__title-accent">бесплатно</span></h5>
+    <div class="input-field"><i class="material-icons prefix">account_circle</i>
+      <input type="text" id="modal-name">
+      <label for="modal-name">Ваше имя</label>
+    </div>
+    <div class="input-field"><i class="material-icons prefix">phone_iphone</i>
+      <input type="text" id="modal-phone">
+      <label for="modal-phone">Ваш телефон</label>
+    </div>
+    <div class="input-field"><i class="material-icons prefix">mail_outline</i>
+      <input type="text" id="modal-email">
+      <label for="modal-email">Ваш email</label>
+    </div>
+    <div class="modal__submit-wrapper">
+      <button type="submit" class="btn waves-effect waves-light">Отправить заявку</button>
+    </div>
+  </div>
+  <ul id="slide-out" class="side-nav">
+    <li class="side-nav__item"><a href="#first-view" class="waves-effect waves-light">Первый блок</a>
+    </li>
+    <li class="side-nav__item"><a href="#second-view" class="waves-effect waves-light">Второй блок</a>
+    </li>
+    <li class="side-nav__item"><a href="#third-view" class="waves-effect waves-light">Третий блок</a>
+    </li>
+    <li class="side-nav__item"><a href="#fourth-view" class="waves-effect waves-light">Четвертый блок</a>
+    </li>
+    <li class="side-nav__item"><a href="#fifth-view" class="waves-effect waves-light">Пятый блок</a>
+    </li>
+    <li class="side-nav__item"><a href="#certifications" class="waves-effect waves-light">Сертификаты</a>
+    </li>
+    <li class="side-nav__item"><a href="#contacts" class="waves-effect waves-light">Контакты</a>
+    </li>
+  </ul>
+  <script src="js/vendors/jquery-2.1.1.min.js"></script>
+  <script src="js/vendors/materialize.min.js"></script>
+  <script src="js/vendors/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/vendors/slick.min.js"></script>
+  <script src="js/vendors/jquery.maskedinput.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

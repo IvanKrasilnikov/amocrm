@@ -1,0 +1,65 @@
+.certifications {
+  @include padding(50px null);
+  
+  &__title {
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__grid {
+    @include container();
+    @include padding(20px null null);
+  }
+  
+  &__pictures {
+    @include span(6 of 12);
+    height: 500px;
+    overflow: hidden;
+    @include breakpoint(0 $md) {
+      @include span(12 of 12);
+    }
+    
+    > .slick-prev {
+      left: 15px;
+      z-index: 3;
+      
+      &:before {
+        color: $c-brand-2;
+      }
+    }
+    
+    > .slick-next {
+      right: 15px;
+      z-index: 3;
+      
+      &:before {
+        color: $c-brand-2;
+      }
+    }
+  }
+  
+  &__picture {
+    text-align: center;
+    
+    > img {
+      display: inline-block;
+    }
+  }
+  
+  &__text-wrapper {
+    @include breakpoint($md) {
+      @include span(6 of 12 last);
+      height: 500px;
+    }
+    @include breakpoint(0 $md) {
+      @include span(12 of 12);
+      @include padding(null null 50px);
+    }
+  }
+  
+  &__text-title {
+    color: $c-brand-1;
+    font-weight: 300;
+    text-align: center;
+  }
+}

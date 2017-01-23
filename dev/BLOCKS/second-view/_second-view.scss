@@ -1,0 +1,76 @@
+.second-view {
+  @include padding(50px null 30px);
+  
+  &__title {
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__grid {
+    @include container();
+    @include margin(50px null 10px);
+    overflow: hidden;
+  }
+  
+  &__tile {
+    @include margin(null null 40px);
+    @include breakpoint($md) {
+      @include span(4 of 12);
+      &:nth-child(3n) {
+        @include last;
+      }
+    }
+    @include breakpoint($xs $md) {
+      @include span(6 of 12);
+      &:nth-child(2n) {
+        @include last;
+      }
+    }
+  }
+  
+  &__tile-icon-wrapper {
+    @include margin(null null 20px);
+    text-align: center;
+  }
+  
+  &__tile-icon {
+    @extend .z-depth-1;
+    background-color: $c-brand-1;
+    border-radius: 50%;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    width: 80px;
+    
+    > .material-icons {
+      color: white;
+      font-size: 42px;
+      line-height: 80px;
+    }
+  }
+  
+  &__tile-title {
+    @include vanishing-text;
+    font-weight: 300;
+    height: 72px;
+    line-height: 24px;
+    @include breakpoint(0 $md) {
+      text-align: center;
+    }
+  }
+  
+  &__tile-text {
+    height: 100px;
+    line-height: 20px;
+  }
+  
+  &__more-wrapper {
+    @include padding(null null 20px);
+    display: none;
+    text-align: center;
+  }
+  
+  &__more-button {
+    @extend .orange, .darken-4;
+  }
+}

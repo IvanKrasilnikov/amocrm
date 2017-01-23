@@ -1,0 +1,63 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.first-view(style="background-image: url(img/first-view-bg.jpg);")#first-view
+  +e.header: .wrapper
+    +e(href="#").logo: img(src="img/logo.png" alt="logo")
+    +e.contacts
+      +e.emails
+        i.material-icons mail_outline
+        +e(href="mailto:#").email
+          | mailmail@gmail.com
+      +e.phones
+        i.material-icons phone_iphone
+        +e.phone-wrapper
+          +e(href="tel:#").phone
+            span +375 29
+            +e.phone-sup 999 99 99
+          +e(href="tel:#").phone
+            span +375 29
+            +e.phone-sup 999 99 99
+  +e.main: .wrapper
+    +e.info
+      +e.H1.title Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      +e.H3.sub-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, reprehenderit id quod!
+      +e.UL.list
+        +e.list-item
+          i.material-icons check_circle
+          | Dolor sit amet, consectetur
+        +e.list-item
+          i.material-icons check_circle
+          | Lorem ipsum dolor sit amet, consectetur adipisicing
+        +e.list-item
+          i.material-icons check_circle
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, laborum. Ipsum dolor sit amet, consectetur adipisicing elit
+        +e.list-item
+          i.material-icons check_circle
+          | Lorem ipsum dolor
+    +e.call-wrapper
+      +e.call
+        +e.H5.call-title
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit
+          +e.call-title-accent бесплатно
+        .input-field
+          i.material-icons.prefix account_circle
+          input(type="text")#first-view-name
+          label(for="first-view-name") Ваше имя
+        .input-field
+          i.material-icons.prefix phone_iphone
+          input(type="text")#first-view-phone
+          label(for="first-view-phone") Ваш телефон
+        .input-field
+          i.material-icons.prefix mail_outline
+          input(type="text")#first-view-email
+          label(for="first-view-email") Ваш email
+        +e.call-submit-wrapper
+          button(type="submit").btn.waves-effect.waves-light
+            | Отправить заявку
+  +e.partners: .wrapper
+    +e.partner: img(src="img/first-view-partners/partner-1.png" alt="")
+    +e.partner: img(src="img/first-view-partners/partner-2.png" alt="")
+    +e.partner: img(src="img/first-view-partners/partner-3.png" alt="")
+    +e.partner: img(src="img/first-view-partners/partner-4.png" alt="")
+    +e.partner: img(src="img/first-view-partners/partner-5.png" alt="")
+    +e.partner: img(src="img/first-view-partners/partner-6.png" alt="")
